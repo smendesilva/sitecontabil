@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MA Assessoria e Consultoria Contábil</title>
+  <meta name="description" content="MA Assessoria Contábil - Contabilidade completa, abertura de empresa, planejamento tributário e departamento pessoal. Atendemos todo o Brasil.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {--verde:#25D366;--azul:#003087;--cinza:#f8f9fa;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Roboto',sans-serif;color:#333;line-height:1.6;}
+    h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:700;}
+    
+    header{
+      background:linear-gradient(135deg,var(--azul),#001f5c);
+      color:white;
+      text-align:center;
+      padding:120px 20px;
+    }
+    header h1{font-size:3.2rem;margin-bottom:15px;}
+    header p{font-size:1.4rem;max-width:900px;margin:0 auto;}
+
+    .servicos,.sobre,.contato{padding:90px 20px;text-align:center;}
+    .servicos{background:#f8f9fa;}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:35px;
+      max-width:1200px;
+      margin:50px auto;
+    }
+    .card{
+      background:white;
+      padding:35px 25px;
+      border-radius:18px;
+      box-shadow:0 12px 35px rgba(0,0,0,0.1);
+      transition:0.4s;
+    }
+    .card:hover{transform:translateY(-12px);box-shadow:0 25px 50px rgba(0,0,0,0.18);}
+
+    .whatsapp-fixo{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      background:var(--verde);
+      color:white;
+      width:68px;
+      height:68px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:36px;
+      box-shadow:0 8px 25px rgba(37,211,102,0.5);
+      z-index:9999;
+      animation:pulse 2s infinite;
+    }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}
+      70%{box-shadow:0 0 0 20px rgba(37,211,102,0)}
+      100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+    }
+
+    .telefone-destaque{
+      background:var(--verde);
+      color:white;
+      padding:18px 30px;
+      border-radius:50px;
+      font-size:1.4rem;
+      font-weight:600;
+      display:inline-block;
+      margin:30px 0;
+      box-shadow:0 8px 20px rgba(37,211,102,0.4);
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      font-size:1.1rem;
+    }
+    @media(max-width:768px){
+      header h1{font-size:2.4rem;}
+      header{padding:90px 20px;}
+      .telefone-destaque{font-size:1.2rem;padding:15px 25px;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MA ASSESSORIA E CONSULTORIA CONTÁBIL</h1>
+    <p>Contabilidade completa • Abertura de empresa • Planejamento tributário<br>
+    Atendemos todo o Brasil com excelência e proximidade</p>
+    
+    <div class="telefone-destaque">
+      <i class="fab fa-whatsapp"></i> (81) 99798-7066
+    </div>
+  </header>
+
+  <section class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Abertura de Empresa</h3>
+        <p>CNPJ em até 48h • MEI, ME, EPP, LTDA</p>
+      </div>
+      <div class="card">
+        <h3>Contabilidade Mensal</h3>
+        <p>Escrituração fiscal e contábil completa</p>
+      </div>
+      <div class="card">
+        <h3>Departamento Pessoal</h3>
+        <p>Folha, eSocial, admissões e rescisões</p>
+      </div>
+      <div class="card">
+        <h3>Planejamento Tributário</h3>
+        <p>Economize até 30% de impostos legalmente</p>
+      </div>
+      <div class="card">
+        <h3>Regularização de Empresas</h3>
+        <p>Resolvemos pendências com Receita e Estados</p>
+      </div>
+      <div class="card">
+        <h3>Consultoria Empresarial</h3>
+        <p>Análise financeira e estratégica</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <h2>Por que escolher a MA Assessoria?</h2>
+    <p style="max-width:900px;margin:40px auto;font-size:1.3rem;">
+      Experiência comprovada, atendimento humanizado via WhatsApp e reuniões online.<br>
+      <strong>Você cuida do seu negócio. Nós cuidamos da burocracia com excelência.</strong>
+    </p>
+  </section>
+
+  <section class="contato">
+    <h2>Fale Agora Mesmo</h2>
+    <p style="font-size:2rem;margin:30px 0;">
+      <i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong>(81) 99798-7066</strong>
+    </p>
+    <p>Atendimento de segunda a sexta, das 08h às 18h<br>
+    Resposta em até 5 minutos no WhatsApp!</p>
+  </section>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5581997987066?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20serviços%20contábeis" 
+     class="whatsapp-fixo" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 MA Assessoria e Consultoria Contábil • Todos os direitos reservados<br>
+    <i class="fab fa-whatsapp"></i> (81) 99798-7066</p>
+  </footer>
+
+</body>
+</html>
